@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	min-height: 100%;
+	display: flex;
+    justify-content: center;
+}
+
+body {
+	min-height: 100%;
+	background-image: url(../images/bg.svg), linear-gradient(180deg, #5D38DB 4.07%, #190776 96.43%);
+	background-position: left bottom, center center;
+	background-repeat: no-repeat;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100%;
+	width: 100%;
+}
+#wrap > img {
+	height: 300px;
+	align-self: flex-end;
+	width: 415px;
+	margin-right: 70px;
+}
+
+#wrap > .wrapper {
+	width: calc(100% - 140px);
+	padding-top: 95px;
+	margin: 0 auto 30px auto;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+#wrap > .wrapper > div {
+	display: flex;
+	width: 343px;
+	flex-direction: column;
+	align-items: center;
+}
+
+#wrap > .wrapper > div > img {
+	width: 153px;
+	margin-bottom: 50px;
+	height: 92px;
+}
+
+#wrap > .wrapper > div > h1 {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 44px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 40px;
+}
+
+#wrap > .wrapper > div > form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#wrap > .wrapper > div > form > div {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+#wrap > .wrapper > div > form > div:last-of-type {
+	margin-bottom: 60px;
+}
+
+#wrap > .wrapper > div > form > div > label {
+	color: #B1BAD3;
+	text-align: right;
+	letter-spacing: -0.08px;
+	font-size: 13px;
+	line-height: 18px;
+	display: block;
+	padding-top: 5px;
+}
+
+#wrap > .wrapper > div > form > div > input {
+	width: 343px;
+	max-width: 343px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #FFFFFF;
+	font-size: 17px;
+	line-height: 22px;
+	letter-spacing: -0.41px;
+	outline: none;
+	color: #FFFFFF;
+	padding: 4px 0;
+}
+
+#wrap > .wrapper > div > form > div > input::placeholder {
+	color: #FFFFFF;
+}
+
+#wrap > .wrapper > div > form > button {
+	background: linear-gradient(90deg, #9A26F6 -0.65%, #DA4999 99.63%);
+	border: none;
+	border-radius: 2px;
+	padding: 0 15px;
+	width: 200px;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.3);
+	outline: none;
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 579px) {
+body {
+	background-position: -70px 360px, center center;
+	background-attachment: scroll;
+}
+#wrap > img {
+	width: 165px;
+	height: 121px;
+	margin-right: 15px;
+}
+#wrap > .wrapper {
+	width: calc(100% - 30px);
+}
+#wrap > .wrapper > div {
+	width: 100%;
+	max-width: 343px;
+}
+#wrap > .wrapper > div > h1 {
+	font-size: 28px;
+}
+#wrap > .wrapper > div > form {
+	width: 100%;
+}
+#wrap > .wrapper > div > form > div {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+#wrap > .wrapper > div > form > div > input {
+	width: 100%;
+}
+#wrap > .wrapper > div > form > div > label {
+	align-self: flex-end;
+}
+}
